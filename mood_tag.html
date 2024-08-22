@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Tagging Journal</title>
+    <link rel="stylesheet" href="mood_tag.css">
+</head>
+<body>
 
+        <!-- nav-bar starts -->
+        <nav class="navbar">
+            <div class="navigation">
+                <a href="#" class="logo">Mind&Me</a>
+                <ul class="nav-links">
+                    <li><a href="mind&me.html">Home</a></li>
+                    <li><a href="mood_tag.html">Tag it up</a></li>
+                    <li><a href="In&Out.html">In&Out</a></li>
+                    <li><a href="calma.html">Calma</a></li>
+                    <li><a href="affirm.html">LuminaLines</a></li>
+                    <li><a href="circulo.html">Circulo</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+        <!-- nav-bar end -->
+    
+    <div class="container">
+        <h1><center>Mood Tagging Journal</center></h1>
+        <form id="entryForm">
+            <textarea id="entryText" placeholder="Write your journal entry..."></textarea>
+            <input type="text" id="moodTags" placeholder="Enter mood tags (comma-separated)" />
+            <button type="submit">Save Entry</button>
+        </form>
+        <h2>Filter by Mood Tags</h2>
+        <input type="text" id="filterTags" placeholder="Enter mood tags to filter (comma-separated)" />
+        <button id="filterButton">Filter Entries</button>
+        <div id="entries"></div>
+    </div>
+    <script src="mood_tag.js"></script>
+</body>
+</html>
