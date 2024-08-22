@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calma</title>
+    <link rel="stylesheet" href="calma.css"> 
+</head>
+
+<body>
+    <!-- nav-bar starts -->
+    <nav class="navbar">
+        <div class="navigation">
+            <a href="#" class="logo">Mind&Me</a>
+            <ul class="nav-links">
+                <li><a href="mind&me.html">Home</a></li>
+                <li><a href="mood_tag.html">Tag it up</a></li>
+                <li><a href="In&Out.html">In&Out</a></li>
+                <li><a href="calma.html">Calma</a></li>
+                <li><a href="affirm.html">LuminaLines</a></li>
+                <li><a href="circulo.html">Circulo</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+    <!-- nav-bar end -->
+    
+    <div class="container">
+
+        <h1>Calma - Meditation Player</h1>
+        <br>
+        <br>
+        <audio id = "meditationPlayer" controls>
+            <source src = "audio/music1.mp3" type = "audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <br>
+        <br>
+
+        <div class = "controls">
+            <button id = "playButton">Play</button>
+            <button id = "pauseButton">Pause</button>
+            <button id = "stopButton">Stop</button>
+        </div>
+
+        <br>
+
+        <select id = "sessionSelect">
+            <option value = "audio/music1.mp3">Music 1</option>
+            <option value = "audio/music2.mp3">Music 2</option>
+            <option value = "audio/music3.mp3">Music 3</option>
+            <option value = "audio/music4.mp3">Music 4</option>
+            <option value = "audio/music5.mp3">Music 5</option>
+        </select>
+
+    </div>
+
+    <script src="calma.js"></script> 
+
+</body>
+</html>
